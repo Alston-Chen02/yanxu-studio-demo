@@ -16,7 +16,7 @@ const people=[{id:'C0001',name:'示例客戶 A',tag:'回訪客',visits:4},{id:'C
 const services=[['水飛梭深層清潔',1080],['皮膚管理入門',1580],['客製化精華導入',1880],['葉綠素換膚',1880],['女神水光肌',1980],['碳酸啵啵',1980],['女神啵啵',2680],['深海膠原',2280],['冰雪星辰',2280],['雪耳水凝',2380],['液態皮秒',2380],['阿拉丁藻針',2580]];
 const bookings=[{id:'B1015-01',time:'09:30',p:0,s:0,status:'已完成',deposit:500},{id:'B1015-02',time:'12:00',p:1,s:4,status:'已完成',deposit:500},{id:'B1015-03',time:'14:30',p:2,s:2,status:'待服務',deposit:500},{id:'B1015-04',time:'17:00',p:3,s:1,status:'待確認訂金',deposit:0}];
 const items=[['P001','雙重纖維面膜','販售商品',8,'片',10],['P002','UHOX 安瓶 3ml','販售商品',18,'支',5],['S001','療程用精華（示例）','療程用品',2,'未開封瓶',1],['S002','一次性棉片（示例）','耗材',4,'包',2]];
-const btn=(text,action,cls='secondary')=>`<button class="${cls}" data-act="${action}">${text}</button>`;
+const btn=(text,action,cls='secondary')=>`<button type="button" class="${cls}" data-act="${action}">${text}</button>`;
 const pill=(t)=>`<span class="pill ${/已完成|已收|已核對|充足/.test(t)?'done':/待|補貨|未/.test(t)?'wait':''}">${t}</span>`;
 const heading=(title,sub,action='')=>`<div class="heading"><div><p class="overline">YANXU · STUDIO WORKSPACE</p><h1>${title}</h1><p class="sub">${sub}</p></div>${action}</div>`;
 const panel=(title,body,extra='')=>`<article class="panel"><div class="panel-top"><h2>${title}</h2>${extra}</div>${body}</article>`;
